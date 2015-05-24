@@ -14,8 +14,8 @@ using namespace std;
 int a[MAX],n,p;
 bool check(int time)
 {
-	int val=0;
-	for(int i=0;i<n;i++)
+	int val=0,i;
+	rep(i,n)
 	{
 		val+=(-1+sqrt(1+(8*time)/a[i]))/2;
 	}
@@ -25,14 +25,13 @@ bool check(int time)
 }
 int main()
 {
-	int t;
+	int t,i,r;
 	cin>>t;
 	while(t--)
 	{
-		int i;
 		cin>>p;
 		cin>>n;
-		int r=0;
+		r=0;
 		rep(i,n)
 		{
 			cin>>a[i];
