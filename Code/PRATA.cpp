@@ -12,7 +12,7 @@
 #define MAX 1005
 using namespace std;
 int a[MAX],n,p;
-int check(int time)
+bool check(int time)
 {
 	int val=0;
 	for(int i=0;i<n;i++)
@@ -20,8 +20,8 @@ int check(int time)
 		val+=(-1+sqrt(1+(8*time)/a[i]))/2;
 	}
 	if(val>=p)
-		return 1;
-	return 0;
+		return true;
+	return false;
 }
 int main()
 {
