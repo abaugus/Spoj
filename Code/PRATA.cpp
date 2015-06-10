@@ -1,3 +1,7 @@
+/*
+    PRATA.cpp
+    Topic: Binary Search
+*/
 #include <bits/stdc++.h>
 #define sz(a) int((a).size()) 
 #define pb push_back 
